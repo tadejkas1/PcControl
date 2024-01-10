@@ -1,0 +1,23 @@
+{
+    "name": "homebridge-pccontrol",
+    "version": "1.0.0",
+    "description": "A Homebridge plugin for PC control",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "homebridge-plugin",
+      "pc-control"
+    ],
+    "author": "TaDejKas",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^0.21.1"
+    },
+    "engines": {
+      "node": ">=10.17.0",
+      "homebridge": ">=1.1.0"
+    }
+  }
+  

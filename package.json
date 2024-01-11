@@ -6,7 +6,7 @@
     "author": "TaDejKas",
     "repository": {
       "type": "git",
-      "url": "https://github.com/tadejkas1/PcControl"
+      "url": "https://github.com/tadejkas1/PcControl.git"
     },
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"

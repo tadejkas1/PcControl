@@ -10,9 +10,13 @@ module.exports = (homebridge) => {
 class PcControl {
   constructor(log, config) {
     this.log = log;
-    this.name = config.name;
-    this.ip = config.ip;
+    this.name = config.name || "PcControl"; // Default
+    this.ip = config.ip || "192.168.178.117"; // Default
     this.port = config.port || 90; // Default to 90 if port not specified
+
+    this.manufacturer = "TaDejKas";
+    this.model = "Windows";
+    this.serialNumber = "535-16-281";
 
     this.monitorEndpoint = {
       on: "monitor-on",
@@ -39,6 +43,12 @@ class PcControl {
   }
 
   getServices() {
-    return [this.switchService];
+    const informationService = new Service.AccessoryInformation()
+      .setCharacteristic(Characteristic.Manufacturer, this.manufacturer)
+      .setCharacteristic(Characteristic.Model, this.model)
+      .setCharacteristic(Characteristic.SerialNumber, this.serialNumber)
+      .setCharacteristic(Characteristic.FirmwareRevision, "1.5");
+  
+    return [informationService, this.switchService];
   }
 }

@@ -10,8 +10,8 @@ module.exports = (homebridge) => {
 class PcControl {
   constructor(log, config) {
     this.log = log;
-    this.name = config.name || "PcControl"; // Default
-    this.ip = config.ip || "192.168.178.117"; // Default
+    this.name = config.name || "PcControl"; // Default name
+    this.ip = config.ip || "192.168.178.117"; // Default ip address
     this.port = config.port || 90; // Default to 90 if port not specified
 
     this.manufacturer = "TaDejKas";

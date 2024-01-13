@@ -2,7 +2,7 @@
 
 A Homebridge plugin for PC control, enabling you to perform various actions on your computer through HomeKit.
 
-# Install my Python program 
+## Install my Python program 
 [PcControl-Windows-app](https://github.com/tadejkas1/PcControl-Windows-app)
 
 ## Features

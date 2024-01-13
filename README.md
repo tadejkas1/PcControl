@@ -2,9 +2,13 @@
 
 A Homebridge plugin for PC control, enabling you to perform various actions on your computer through HomeKit.
 
+# Install my Python program 
+[PcControl-Windows-app](https://github.com/tadejkas1/PcControl-Windows-app)
+
 ## Features
 
 - **Monitor Control**: Turn your monitor on or off.
+- **Lock Control**:Locks your pc.
 - **System Sleep**: Coming soon.
 - (Coming soon...)
 
@@ -24,9 +28,12 @@ Add the following configuration to your Homebridge config.json file:
 "accessories": [
   {
     "accessory": "PcControl",
-    "name": "Monitor Control",
-    "ip": "YOUR_PC_IP_ADDRESS",
-    "port": YOUR_PC_PORT
+    "name": "PcControl",
+    "ip": "192.168.1.117",
+    "port": 90,
+    "displayCheckbox": true,
+    "lockCheckbox": true,
+    "logLevel": 1
   },
   // Add other accessories or configurations...
 ]

@@ -1,0 +1,73 @@
+{
+    "pluginAlias": "PcControl",
+    "pluginType": "accessory",
+    "singular": true,
+    "headerDisplay": "## PC Control\n\nPlugin for controlling PC features like monitor on/off and lock/unlock through HomeKit.\n\nMade with ❤ by [TaDejKas](https://github.com/tadejkas1).\n\nIf you find this plugin helpful, consider donating with [PayPal](https://paypal.me/TaDejKas) or [Ko-Fi](https://ko-fi.com/TaDejKas) to support development.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "accessory": {
+          "type": "string",
+          "title": "Accessory",
+          "default": "PcControl",
+          "description": "You can not change accessory",
+          "required": true,
+          "readOnly": true
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "default": "PcControl",
+          "description": "Name of the accessory as it appears in HomeKit",
+          "required": true
+        },
+        "ip": {
+          "type": "string",
+          "title": "IP Address",
+          "default": "192.168.1.117",
+          "description": "The IP address of your PC",
+          "required": true
+        },
+        "port": {
+          "type": "number",
+          "title": "Port",
+          "default": 90,
+          "description": "The port for controlling the PC",
+          "required": true
+        },
+        "displayCheckbox": {
+          "type": "boolean",
+          "title": "Display",
+          "default": true,
+          "description": "Enable the Display action",
+          "required": true
+        },
+        "lockCheckbox": {
+          "type": "boolean",
+          "title": "Lock",
+          "default": true,
+          "description": "Enable the Lock action",
+          "required": true
+        },
+        "logLevel": {
+          "type": "integer",
+          "title": "Log Level",
+          "description": "Set the level of logs: 0 = No logs, 1 = Only switch and lock logs, 2 = All logs",
+          "default": 1,
+          "minimum": 0,
+          "maximum": 2,
+          "required": false
+        }
+      },
+      "required": ["accessory", "name", "ip", "port", "displayCheckbox", "lockCheckbox"]
+    },
+    "form": [
+      {
+        "type": "fieldset",
+        "title": "PC Control Configuration",
+        "description": "Configure your PC Control settings here.",
+        "items": ["name", "ip", "port", "displayCheckbox", "lockCheckbox", "logLevel"]
+      }
+    ]
+  }
+  

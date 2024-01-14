@@ -3,6 +3,9 @@
     "displayName": "PcControl",
     "version": "1.5.0",
     "description": "A Homebridge plugin for PC control",
+    "publishConfig": {
+      "access": "public"
+    },
     "main": "index.js",
     "author": "TaDejKas (https://github.com/tadejkas1)",
     "maintainers": ["TaDejKas (https://github.com/tadejkas1)"],

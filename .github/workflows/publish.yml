@@ -19,9 +19,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build (if needed)
-      run: npm run build  # Replace or remove this line if your package doesn't need a build step
-
     - name: Publish to npm
       run: npm publish
       env:

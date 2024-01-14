@@ -50,5 +50,7 @@ If you have ideas for new features or improvements, feel free to contribute to t
 License
 This project is licensed under the MIT License.
 
-Author
-TaDejKas - https://github.com/tadejkas1
+---
+
+**Author:** [TaDejKas](https://github.com/tadejkas1)
+**Version:** 1.5
